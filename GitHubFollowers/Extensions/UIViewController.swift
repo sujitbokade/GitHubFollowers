@@ -38,6 +38,7 @@ extension UIViewController {
             activityIndicater.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             activityIndicater.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+        
         activityIndicater.startAnimating()
     }
     
@@ -47,6 +48,11 @@ extension UIViewController {
             containerView.removeFromSuperview()
             containerView = nil
         }
-       
+    }
+    
+    func showEmptyStateView(with message: String, in view: UIView) {
+        let emptyStateView = GFEmptyStateView(message: message)
+        emptyStateView.frame = view.bounds
+        view.addSubview(emptyStateView)
     }
 }

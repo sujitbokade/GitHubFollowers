@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class GFAvatarImageView: UIImageView {
     
     let cache = NetworkManager.shared.cache

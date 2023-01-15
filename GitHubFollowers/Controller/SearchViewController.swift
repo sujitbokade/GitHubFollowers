@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SearchViewController: UIViewController {
     
     let logoImageView = UIImageView()
